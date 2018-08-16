@@ -10,7 +10,9 @@
   "author": "",
   "license": "Apache 2.0",
   "dependencies": {
+    "@okta/jwt-verifier": "0.0.12",
     "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
     "epilogue": "^0.7.1",
     "express": "^4.16.3",
     "sequelize": "^4.38.0",
