@@ -1,10 +1,9 @@
 const Sequelize = require('sequelize')
-const epilogue = require('epilogue')
+const finale = require('finale-rest')
 
 const database = new Sequelize({
   dialect: 'sqlite',
-  storage: './test.sqlite',
-  operatorsAliases: false
+  storage: './test.sqlite'
 })
 
 const Part = database.define('parts', {
@@ -15,9 +14,9 @@ const Part = database.define('parts', {
 })
 
 const initializeDatabase = async (app) => {
-  epilogue.initialize({ app, sequelize: database })
+  finale.initialize({ app, sequelize: database })
 
-  epilogue.resource({
+  finale.resource({
     model: Part,
     endpoints: ['/parts', '/parts/:id']
   })
