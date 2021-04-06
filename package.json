@@ -1,9 +1,10 @@
 {
   "name": "rest-api",
   "version": "1.0.0",
-  "description": "A parts catalog",
+  "description": "Simple Node REST API w/ OAuth 2.0 Client Credentials",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
     "test": "standard"
   },
   "repository": {
